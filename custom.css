@@ -40,7 +40,7 @@
 }
 
 .tabs-container > .tab.active.tab-actions-right,
-.monaco-action-bar .action-item.checked .action-label.codicon {
+#workbench.parts.activitybar .monaco-action-bar .action-item.checked .action-label.codicon {
 	background: radial-gradient(
 		circle at right bottom,
 		var(--color-gradient-hsla-5),
