@@ -40,8 +40,7 @@
 }
 
 .tabs-container > .tab.active.tab-actions-right,
-.monaco-action-bar .action-item.checked,
-.part.activitybar .monaco-action-bar .action-item.checked .action-label {
+.part.activitybar .monaco-action-bar .action-item.checked {
 	background: radial-gradient(
 		circle at right bottom,
 		var(--color-gradient-hsla-5),
