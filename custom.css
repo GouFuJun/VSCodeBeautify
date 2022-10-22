@@ -1,0 +1,57 @@
+/* tabs 标题 */
+.tabs-container > .tab.tab-border-bottom > .tab-border-bottom-container {
+	height: 2px !important;
+	border-radius: 1px !important;
+	transition: transform 0.2s ease-in-out !important;
+	transform: scaleX(0) !important;
+	opacity: 0 !important;
+	display: block !important;
+}
+
+/* 左侧功能栏的渐变线条 */
+.monaco-action-bar .action-item .active-item-indicator:before {
+	content: " " !important;
+	border: none !important;
+	width: 2px !important;
+	border-radius: 1px !important;
+	transition: transform 0.2s ease-in-out !important;
+	transform: scaleY(0) !important;
+	opacity: 0 !important;
+}
+
+.monaco-action-bar .action-item.checked .active-item-indicator:before,
+.tabs-container > .tab.active.tab-border-bottom > .tab-border-bottom-container,
+.tabs-container.test-body {
+	opacity: 1 !important;
+	transform: none !important;
+	background: radial-gradient(
+		circle at right bottom,
+		var(--color-gradient-5),
+		var(--color-gradient-6),
+		var(--color-gradient-7),
+		var(--color-gradient-8),
+		var(--color-gradient-9),
+		var(--color-gradient-10)
+	) !important;
+}
+
+@keyframes rotate-reverse {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.monaco-workbench
+	.part.editor
+	> .content
+	.editor-group-container.active
+	> .title
+	.tabs-container
+	> .tab
+	> .tab-actions
+	.action-label.codicon:hover::before {
+	animation: rotate-reverse 1s linear infinite;
+}
