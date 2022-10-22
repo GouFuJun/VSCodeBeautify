@@ -1,11 +1,15 @@
 /* tabs 标题 */
 .tabs-container > .tab.tab-actions-right > .tab-border-bottom-container {
+	width: -webkit-fill-available;
 	height: 2px !important;
 	border-radius: 1px !important;
 	transition: transform 0.2s ease-in-out !important;
 	transform: scaleX(0) !important;
 	opacity: 0 !important;
 	display: block !important;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 /* 左侧功能栏的渐变线条 */
@@ -34,6 +38,8 @@
 		var(--color-gradient-10)
 	) !important;
 }
+
+.tabs-container > .tab.tab-actions-right,
 .monaco-action-bar .action-item.checked .action-label.codicon {
 	background: radial-gradient(
 		circle at right bottom,
