@@ -1,5 +1,5 @@
 /* tabs 标题 */
-.tabs-container > .tab.tab-border-bottom > .tab-border-bottom-container {
+.tabs-container > .tab.tab-actions-right > .tab-border-bottom-container {
 	height: 2px !important;
 	border-radius: 1px !important;
 	transition: transform 0.2s ease-in-out !important;
@@ -20,7 +20,7 @@
 }
 
 .monaco-action-bar .action-item.checked .active-item-indicator:before,
-.tabs-container > .tab.active.tab-border-bottom > .tab-border-bottom-container,
+.tabs-container > .tab.active.tab-actions-right > .tab-border-bottom-container,
 .tabs-container.test-body {
 	opacity: 1 !important;
 	transform: none !important;
