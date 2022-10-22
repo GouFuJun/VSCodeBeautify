@@ -40,6 +40,7 @@
 }
 
 .tabs-container > .tab.active.tab-actions-right,
+
 .part.activitybar .monaco-action-bar .action-item.checked {
 	background: radial-gradient(
 		circle at right bottom,
