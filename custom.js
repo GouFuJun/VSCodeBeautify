@@ -27,6 +27,14 @@ function color_loop() {
 			`--color-gradient-${i + 1}`,
 			color
 		)
+
+		// 生成颜色
+		const colorHSLA = `hsla(${h}, ${s}%, ${l}%, 0.2)`
+		// 设置颜色
+		document.documentElement.style.setProperty(
+			`--color-gradient-hsla-${i + 1}`,
+			colorHSLA
+		)
 	})
 
 	requestAnimationFrame(color_loop)
